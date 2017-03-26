@@ -2,8 +2,8 @@
 
 > Una de las ventajas de utilzar ECMA6 es que puede utilizar la palabra class para trabajar con objetos de manera más fácil
 > La clase medida lleva su constructor que tiene como tarea desglozar la entrada que se inserte en el html y asi poder trabajar de una manera más fácil
-> La clase constructor tiene su getter y su setter tanto para mostrar el numero como para poder ver su unidad de medida 
-> El metodo to_s devuleve la cadena de entrada a un string
+> La clase constructor tiene su getter y su setter tanto para mostrar el número como para poder ver su unidad de medida 
+> El método to_s devuelve la cadena de entrada a un string
 > En el siguiente fragmento de código se muestra lo descrito anteriormente
 
 > ```javascript

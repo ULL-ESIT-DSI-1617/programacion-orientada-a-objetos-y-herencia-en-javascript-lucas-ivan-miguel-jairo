@@ -38,6 +38,7 @@ $ npm install --save-dev babel-preset-es2015
      },
 ```     
 > Para ejecutarlos solo tenemos que tirar los siguientes comando desde la terminal:
+
 > ```javascript
 $ npm run build
 $ npm run dev
