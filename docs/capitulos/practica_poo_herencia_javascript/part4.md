@@ -1,7 +1,7 @@
 ## Creacion clase Celsius, Fahrenheit, Kelvin
 
 > La clase Celsius tiene declarado su propio constructor y hereda de la clase Temperatura
-> Con la palabra reservada super podemos acceder a las propiedades de los metodos superiores
+> Con la palabra reservada super podemos acceder a las propiedades de los métodos superiores
 > La clase Celsius esta compuesta de sus métodos que convierten a unidades de otro tipo.
 > Dentro de cada método se llama a su constructor de la unidad a convertir y lo devuelve como resultado
 > En el siguiente fragmento de código se muestra lo descrito anteriormente
