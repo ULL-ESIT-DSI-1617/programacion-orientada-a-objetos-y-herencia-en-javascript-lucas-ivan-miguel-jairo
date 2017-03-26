@@ -39,7 +39,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 // Authentication and Authorization Middleware
-let auth = function(req, res, next) {
+var auth = function auth(req, res, next) {
   if (req.session && req.session.user in users){
     return next();
   }
@@ -64,8 +64,8 @@ app.post('/login', function (req, res) {
             req.session.admin = true;
             res.render('libro', {message:"Bienvenido "+req.body.username});
   } else {
-          console.log('login ${util.inspect(req.query)} failed');
-          res.render('login',{message: 'Failed. You are user not logged'});
+         // console.log(`login ${util.inspect(req.query)} failed`);
+          res.render('login',{message: 'Error.No estás registrado'});
          // res.send(`login ${util.inspect(req.query)} failed. You are ${req.session.user || 'not logged'}`);
   }
 });
@@ -108,7 +108,7 @@ app.post('/reg', function (req, res) {
         });
     console.log('User registred');
   
-   res.render('login');
+   res.render('login',{message: 'Registro correcto'});
   }
    else
     res.render('registro', {message: 'Registro incorrecto'});
@@ -137,12 +137,14 @@ app.post('/act', function (req, res)
             obj[req.body.username] = bcrypt.hashSync(req.body.newpassword);
             console.log("Este es mi nuevo password : " + req.body.username);
            
-          res.render('actualizarcontraseña',{message: 'Actualizado la contraseña' });
+          res.render('login',{message: 'Actualizado la contraseña' });
   } 
   else 
   {
-    console.log('Update ${util.inspect(req.query)} failed');
+
+    console.log("Update "+util.inspect(req.query)+" failed");
        res.render('actualizarcontraseña',{message: 'Actualización Fallida' });
+
     //res.send(layout(`login ${util.inspect(req.query)} failed. You are ${req.session.user || 'not logged'}`));
   }
   
@@ -164,7 +166,7 @@ app.get('/logout', function (req, res) {
 
 // Get content endpoint
 app.get('/content/*?',auth );
-app.use('/content', express.static(path.join(__dirname, 'gh-pages')));
+app.use('/content', express.static(path.join(__dirname, '_book')));
 
 // Crear puesto de escucha
 app.set('port', (process.env.PORT || 8080));
