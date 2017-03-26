@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel --presets es2015 assets/js -d dist "
+    "build": "babel --presets es2015 public/assets/js -d public/dist "
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
