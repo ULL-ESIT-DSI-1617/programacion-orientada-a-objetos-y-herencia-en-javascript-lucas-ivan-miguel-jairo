@@ -1,6 +1,6 @@
 # Programación orientada a objetos y herencia en javascript
 
-* [Enlace a Gh-pages](https://ull-esit-dsi-1617.github.io/estudiar-cookies-y-sessions-en-expressjs-jairo-miguel-lucas-ivan/)
+* [Enlace a Gh-pages](https://ull-esit-dsi-1617.github.io/programacion-orientada-a-objetos-y-herencia-en-javascript-lucas-ivan-miguel-jairo/)
 * [Enlace a Gitbook](https://alu0100785265.gitbooks.io/tutorial-dsi/content/)
 ## Despliegues
 * [Heroku](https://dsi-p6.herokuapp.com/)
