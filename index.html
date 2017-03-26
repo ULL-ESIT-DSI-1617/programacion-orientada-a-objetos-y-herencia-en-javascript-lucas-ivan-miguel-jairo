@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <title>JavaScript Temperature Converter</title>
+     <link href="css/normalize.css" rel="stylesheet" type="text/css">
+     <link href="css/global.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="js/temperatura.js"></script>
+      
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <table>
+      <tr>
+        <th>Enter  Temperature :</th>
+        <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
+      </tr>
+     
+      <tr>
+        <th>Converted Temperature:</th>
+        <td><span class="output" id="converted"></span></td>
+      </tr>
+    </table>
+    <div><h4>Ejemplos de temperatura</h4>
+        <h5>Celsius: 1C o 1c = 33.80 F</h5>
+        
+    <h5>Fahrenheit: 1 F o 1f = -17.22 ºC</h5>
+    <h5>Kelvin: 1 K o 1 f= -272.15 ºC</h5>
+        
+    </div>
+  </body>
+</html>
