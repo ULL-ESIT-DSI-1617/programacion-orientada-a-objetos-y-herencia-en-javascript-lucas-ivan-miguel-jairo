@@ -74,6 +74,12 @@ app.post('/login', function (req, res) {
 
 app.get('/', function(req, res) {
   //res.render('inicio');
+  res.render('../index', {message: 'conversor!'});
+  
+});
+
+app.get('/inicio', function(req, res) {
+  //res.render('inicio');
   res.render('index', {message: 'Bienvenido!'});
   
 });
@@ -89,6 +95,11 @@ app.get('/registro', function(req, res) {
 app.get('/actualiza', function(req, res) {
   res.render('actualizarcontraseña', {message: 'Bienvenido!'});
 });
+
+app.get('/conversor', function(req, res) {
+  res.render('../index', {message: 'Conversor!'});
+});
+
 
 app.get('/libro', function(req, res) {
     res.render('libro', {message: 'Bienvenido '})
