@@ -1,6 +1,5 @@
 class Medida{
 
-<<<<<<< HEAD
     constructor(dato){
          var regexp = /([-+]?\d+(?:\.\d*)?)\s*((k|m|c)?m(3)?|[CcKFfk])/;
          var m = dato.match(regexp);
@@ -36,7 +35,7 @@ class Medida{
 
 
 }
-=======
+
 console.log(ejemplo);
 
 class Celsius extends Temperatura{
@@ -98,4 +97,4 @@ class Celsius extends Temperatura{
             return n;
         }
     }
->>>>>>> ivan
+
